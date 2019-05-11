@@ -57,7 +57,7 @@
 challenges:
   # Challenge levels - list as many as you like. If a challenge's level is '' it can
   # be done anytime. You cannot name a challenge the same as a level.
-  levels: 'Novice Competent Expert Advanced Elite'
+  levels: 'Baslangic Orta Zor Ultra'
     
   # The number of undone tasks that can be left on a level before unlocking next level
   waiveramount: 1
@@ -73,50 +73,50 @@ challenges:
   # The subname should correspond to the levels listed above
   # Note that there is no section for the first level as it is automatically unlocked
   levelUnlock:
-    Competent:
+    Baslangic:
       # What additional message to send player
-      message: 'Congratulations - you unlocked the &9Competent level!'
-      rewardDesc: 'A diamond!'
-      itemReward: 'DIAMOND:1'
-      moneyReward: 100
-      expReward: 100
+      message: 'Tebrik ederim! - &9Başlangıç &fseviyesini tamamladın!'
+      rewardDesc: 'Gönülden 3 tane altın ve 10 xp !'
+      itemReward: 'GOLD_INGOT:3'
+      moneyReward: 0
+      expReward: 10
       # List permissions separated by spaces
       permissionReward: ''
       # Commands to run on this player. Use [player] for their name.
       commands:
       #- kit tools [player]
       #- some other command
-    Expert:
+    Orta:
       # What additional message to send player
-      message: 'Congratulations - you unlocked the &aExpert level!'
-      rewardDesc: '3 diamonds!'
-      itemReward: 'DIAMOND:3'
-      moneyReward: 100
-      expReward: 100
+      message: 'Tebrik ederim! - &eOrta &fseviyesini tamamladın!'
+      rewardDesc: 'Gönülden 5 tane altın , 15 xp ve 10 TL oyun parası !'
+      itemReward: 'GOLD_INGOT:5'
+      moneyReward: 10
+      expReward: 15
       permissionReward: ''
       # Commands to run on this player. Use [player] for their name.
       commands:
       #- kit tools [player]
       #- some other command
-    Advanced:
+    Zor:
       # What additional message to send player
-      message: 'Congratulations - you unlocked the &bAdvanced level!'
-      rewardDesc: '5 diamonds!'
-      itemReward: 'DIAMOND:5'
-      moneyReward: 100
-      expReward: 100
+      message: 'Tebrik ederim! - &cZor &fseviyesini tamamladın!'
+      rewardDesc: 'Gönülden 1 tane elmas !'
+      itemReward: 'DIAMOND:1'
+      moneyReward: 0
+      expReward: 0
       permissionReward: ''
       # Commands to run on this player. Use [player] for their name.
       commands:
       #- kit tools [player]
       #- some other command
-    Elite:
+    Ultra:
       # What additional message to send player
-      message: 'Congratulations - you unlocked the &dElite level!'
-      rewardDesc: '7 diamonds!'
-      itemReward: 'DIAMOND:7'
-      moneyReward: 100
-      expReward: 100
+      message: 'Tebrik ederim! - &cZor &fseviyesini tamamladın!'
+      rewardDesc: 'Gönülden 1 tane elmas ve 30 oyun parası !'
+      itemReward: 'DIAMOND:1'
+      moneyReward: 30
+      expReward: 0
       permissionReward: ''
       # Commands to run on this player. Use [player] for their name.
       commands:
@@ -127,10 +127,10 @@ challenges:
   # Challenge names must be in lowercase. Do not use the same name as a level!
   challengeList:
     glassmaker:
-      friendlyname: 'Glass Maker'
-      description: 'Create 1 block of glass'
+      friendlyname: 'Son Cam Bükücüsü'
+      description: '1 adet cam üret ve teslim et.'
       icon: GLASS
-      level: 'Novice'
+      level: 'Baslangic'
       type: inventory
       requiredItems: 'GLASS:1'
       # You can require the player has a certain amount of money for inventory challenges.
@@ -140,62 +140,62 @@ challenges:
       #requiredMoney: 10
       takeItems: true
       itemReward: 'ICE:1'
-      rewardText: '1 block of ice'
+      rewardText: '1 adet buz bloğu.'
       #rewardcommands:
       #- kit tools [player]
-      moneyReward: 10
-      expReward: 30
+      moneyReward: 0
+      expReward: 1
       permissionReward: ''
-      repeatable: true
+      repeatable: false
       repeatItemReward: 'ICE:1'
       repeatRewardText: '1 block of ice'
       repeatMoneyReward: 5
       repeatExpReward: 10
       #repeatrewardcommands:
       # Max times limits how many times a challenge can be done. Comment out to make unlimited
-      maxtimes: 2
+      maxtimes: 1
       # Allow this challenge to reset when the player resets their island
       # Default is true. Set to false to keep this challenge completed.
       # Admins can always reset challenges even if this is set to false.
-      resetallowed: true
+      resetallowed: false
     breadmaker:
-      friendlyname: 'Bread Maker'
-      description: 'Bake 21 loaves of bread'
+      friendlyname: 'Fırıncıbaşı'
+      description: '21 adet ekmek üret ve teslim et.'
       icon: BREAD
-      level: 'Novice'
+      level: 'Baslangic'
       type: inventory
       requiredItems: 'BREAD:21'
       takeItems: true
       itemReward: 'DIRT:5'
-      rewardText: '5 dirt'
-      moneyReward: 10
-      expReward: 30
+      rewardText: '5 adet toprak bloğu.'
+      moneyReward: 2
+      expReward: 1
       permissionReward: ''
       repeatable: true
       repeatItemReward: 'DIRT:1'
-      repeatRewardText: '1 dirt'
-      repeatMoneyReward: 5
-      repeatExpReward: 10
+      repeatRewardText: '1 adet toprak bloğu.'
+      repeatMoneyReward: 1
+      repeatExpReward: 0
       # Max times limits how many times a challenge can be done. Comment out to make unlimited
       maxtimes: 100
     dyemaker:
-      friendlyname: 'Dye Maker'
-      description: 'Craft 32 cactus green dyes'
+      friendlyname: 'Filli Boya'
+      description: '12 adet kaktüs boyası üret ve teslim et.'
       icon: INK_SACK:2
-      level: 'Novice'
+      level: 'Baslangic'
       type: inventory
       requiredItems: 'INK_SACK:2:32'
       takeItems: true
       itemReward: 'SAPLING:0:2 SAPLING:1:2 SAPLING:2:2 SAPLING:3:2'
-      rewardText: '2 oak, 2 birch, 2 jungle and 2 spruce saplings'
-      moneyReward: 10
-      expReward: 30
+      rewardText: '2 adet meşe odunu, 2 huş odunu, 2 adet orman odunu ve 2 adet ladin fidanı.'
+      moneyReward: 2
+      expReward: 1
       permissionReward: ''
       repeatable: true
       repeatItemReward: 'SAPLING:0:1 SAPLING:1:1 SAPLING:2:1 SAPLING:3:1 SAPLING:4:1 SAPLING:5:1'
-      repeatRewardText: '1 of each kind of sapling'
-      repeatMoneyReward: 5
-      repeatExpReward: 10
+      repeatRewardText: 'Her odun türünün fidanından 1 adet.'
+      repeatMoneyReward: 1
+      repeatExpReward: 0
       # Max times limits how many times a challenge can be done. Comment out to make unlimited
       maxtimes: 100
     papermaker:
